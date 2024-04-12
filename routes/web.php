@@ -9,10 +9,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test-openai', function () {
-    return view('dashboard');
-});
-Route::post('/test-openai', [ChatGPTController::class, 'chat'])->name('send-message');
+Route::match(['get', 'post'], '/test-openai', [ChatGPTController::class, 'chat'])->name('send-message');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

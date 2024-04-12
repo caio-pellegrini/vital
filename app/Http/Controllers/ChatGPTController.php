@@ -17,7 +17,9 @@ class ChatGPTController extends Controller
             ]
         ]);
 
-        return dd($result->choices[0]->message->content);
+        $responseMessage = $result->choices[0]->message->content;
+
+        return view('dashboard', ['responseMessage' => $responseMessage]);
         
     }
 }
