@@ -2,10 +2,17 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use OpenAI\Laravel\Facades\OpenAI;
+use App\Http\Controllers\ChatGPTController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test-openai', function () {
+    return view('dashboard');
+});
+Route::post('/test-openai', [ChatGPTController::class, 'chat'])->name('send-message');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
