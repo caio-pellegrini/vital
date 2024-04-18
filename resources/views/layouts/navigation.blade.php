@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-cinza-header bg-verde-header text-white border-b-[3px] mt-4 h-24 flex flex-col justify-center items-center text-center">
+    <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-cinza-header bg-verde-escuro text-white border-b-[3px] mt-4 h-24 flex flex-col justify-center items-center text-center">
         <h2>Tudo o que você precisa para fazer uma alimentação saudável, seja para emagrecer ou ganhar peso.</h2>
         <h2>Dicas de dieta e suplementação para uma vida saudável em qualquer fase da vida.</h2>
     </div>
@@ -34,7 +34,7 @@
         <div class="flex justify-center items-center h-6 sm:h-8">
             <!-- Navigation Links -->
             <div class="hidden space-x-8 sm:flex ">
-                <x-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
+                <x-nav-link :href="route('calculadoras')" :active="request()->routeIs('calculadoras')">
                     {{ __('CALCULADORAS') }}
                 </x-nav-link>
                 <x-nav-link :href="route('/')" :active="request()->routeIs('/')">

@@ -48,8 +48,8 @@
 
                         <div class="flex justify-center mt-4">
                             <button type="button"
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                                onclick="calculateResults()">Calcular</button>
+                                class="bg-verde-header hover:bg-verde-escuro text-white font-bold py-2 px-4 rounded"
+                                onclick="calculateResults()">CALCULAR</button>
                         </div>
                     </form>
 
@@ -61,14 +61,81 @@
                 </div>
             </div>
 
-            
+
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg my-4">
+                <div class="p-6 text-gray-900">
+                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                        {{ __('Resultados') }}
+                    </h2>
+                    <div id="resultsContainer" class="flex flex-wrap -mx-2 hidden">
+                        <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+                            <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
+                                <div class="p-6 text-gray-900 flex flex-col items-center">
+                                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                                        {{ __('IMC') }}
+                                    </h2>
+                                    <p id="resultIMC"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+                            <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
+                                <div class="p-6 text-gray-900 flex flex-col items-center">
+                                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                                        {{ __('TMB') }}
+                                    </h2>
+                                    <p id="resultTMB"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+                            <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
+                                <div class="p-6 text-gray-900 flex flex-col items-center">
+                                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                                        {{ __('Peso Ideal') }}
+                                    </h2>
+                                    <p id="resultPesoIdeal"></p>
+                                </div>
+                            </div>
+                        </div>
 
 
 
-            <div id="resultIMC"></div>
-            <div id="resultTMB"></div>
-            <div id="resultPesoIdeal"></div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            @if (!Auth::check())
+                <div class="bg-verde-header overflow-hidden shadow-sm sm:rounded-lg my-4 p-4">
+                    <div>
+                        Cadastra-se para ter suas informações salvas e acesso ao nosso Plano Nutricional personalizado e
+                        potencializado por IA!
+                    </div>
+                    <x-nav-link :href="route('register')" class="hover:underline">
+                        {{ __('CADASTRE-SE') }}
+                    </x-nav-link>
+                    @if (Route::has('register'))
+                        <x-nav-link :href="route('login')" class="hover:underline">
+                            {{ __('ENTRAR') }}
+                        </x-nav-link>
+                    @endif
+                </div>
+            @endif
         </div>
+
+
+        <div>saiba mais</div>
+
     </div>
 
     <script src="{{ asset('js/metricas.js') }}"></script>
