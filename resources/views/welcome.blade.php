@@ -16,12 +16,12 @@
     <div class="mx-60 mt-12 flex justify-between space-x-24 ">
         <div class="w-1/2 p-4 ">
             <div class="font-bold justify-center items-center flex mb-4">ARTIGOS ÚTEIS</div>
-            <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">Vitamina B6 (piridoxina): para que serve e quantidade recomendada <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1">Acessar</button></div>
-            <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">11 alimentos que ajudam na cicatrização <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1">Acessar</button></div>
+            <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">Vitamina B6 (piridoxina): para que serve e quantidade recomendada <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1"><a href="https://www.tuasaude.com/funcao-da-vitamina-b6-piridoxina/#:~:text=A%20vitamina%20B6%20est%C3%A1%20relacionada%20com%20a%20regula%C3%A7%C3%A3o%20da%20resposta,aumentando%20as%20defesas%20do%20corpo" target="_blank">Acessar</a></button></div>
+            <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">11 alimentos que ajudam na cicatrização <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1"><a href="https://www.tuasaude.com/alimentos-cicatrizantes/" target="_blank">Acessar</a></button></div>
             <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">Liga Esportiva debate educação e nutrição juvenil
-                <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1">Acessar</button>
+                <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1"><a href="https://www.terra.com.br/esportes/jogos-olimpicos/liga-esportiva-debate-educacao-e-nutricao-juvenil,544db517897ca46bc45744c1f41dfe72jm6narfn.html" target="_blank">Acessar</a></button>
             </div>
-            <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">Exercícios para perder barriga: 10 melhores opções <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1">Acessar</button></div>
+            <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">Exercícios para perder barriga: 10 melhores opções <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1"><a href="https://www.tuasaude.com/3-exercicios-simples-para-fazer-em-casa-e-perder-barriga/" target="_blank">Acessar</a></button></div>
         </div>
         <div class="border-black border-l"></div>
         <div class="w-1/2 p-4">
