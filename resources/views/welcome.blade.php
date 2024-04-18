@@ -3,6 +3,7 @@
         Vital - Nutrição e Saúde
     </x-slot>
 
+
     <div class="flex relative w-full overflow-hidden sm:h-[60vh] -mt-px px-8 hover:scale-[1.03] ease-in-out transform transition-transform duration-300">
         <img class="w-full h-full object-contain" src="{{asset('/images/banner_home.png')}}" type="">
     </div>

@@ -5,17 +5,12 @@
         <div class="mx-auto px-4 sm:px-6 lg:px-8 ">
             <div class="flex justify-center items-center h-20">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
+                <div class="shrink-0 flex items-center mt-5">
                     <a href="{{ route('/') }}">
                         <x-application-logo></x-application-logo>
                     </a>
                 </div>
-                <!-- Search Bar -->
-                <div class="grow my-3 px-6">
-                    <form action="">
 
-                    </form>
-                </div>
                 <!-- Settings Dropdown -->
                 @if (Route::has('login'))
                     <div class="flex items-center">
@@ -33,7 +28,9 @@
                                         </button>
                                     </x-slot>
                                     <x-slot name="content">
+                                        
                                         <!-- Authentication -->
+                                        
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
                                             <x-dropdown-link :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
@@ -69,15 +66,23 @@
             </div>
         </div>
     </div>
-    <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-cinza-header text-white border-b-[3px] border-verde-escuro">
+    <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-cinza-header bg-lime-600 text-white border-b-[3px] mt-4 h-24 flex flex-col justify-center items-center text-center">
+        <h2>Tudo o que você precisa para fazer uma alimentação saudável, seja para emagrecer ou ganhar peso.</h2>
+        <h2>Dicas de dieta e suplementação para uma vida saudável em qualquer fase da vida.</h2>
+    </div>
+
+    <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-cinza-header  bg-lime-600 text-white border-b-[3px] mt-2">
         <div class="flex justify-center items-center h-6 sm:h-8">
             <!-- Navigation Links -->
-            <div class="hidden space-x-8 sm:flex">
+            <div class="hidden space-x-8 sm:flex ">
+                <x-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
+                    {{ __('CALCULADORAS') }}
+                </x-nav-link>
                 <x-nav-link :href="route('/')" :active="request()->routeIs('/')">
                     {{ __('INÍCIO') }}
                 </x-nav-link>
                 <x-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
-                    {{ __('CONTATO') }}
+                    {{ __('SUAS INFORMAÇÕES ') }}
                 </x-nav-link>
             </div>
         </div>
@@ -120,4 +125,5 @@
             </div>
         @endif
     </div>
+    
 </nav>
