@@ -24,9 +24,7 @@ Route::get('/info', function () {
     return view('info');
 })->name('info');
 
-// routes/web.php
 
 
-, [NutritionalProgramController::class, 'create'], [NutritionalProgramController::class, 'store']
 
 require __DIR__.'/auth.php';
