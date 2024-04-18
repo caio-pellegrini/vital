@@ -11,6 +11,9 @@ Route::get('/', function () {
 
 Route::match(['get', 'post'], '/test-openai', [ChatGPTController::class, 'chat'])->name('send-message');
 
+Route::get('calculadoras', function () {
+    return view('calculadoras');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

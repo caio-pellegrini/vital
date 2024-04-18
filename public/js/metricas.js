@@ -11,7 +11,7 @@ function calcularIMC(peso, altura) {
     else if (imc <= 24.9) classificação = "Peso normal";
     else if (imc <= 29.9) classificação = "Sobrepeso";
     else classificação = "Obesidade";
-    return imc, classificação;
+    return [imc, classificação];
 }
 
 function calcularTMB(genero, peso, altura, idade) {
@@ -28,3 +28,20 @@ function calcularPesoIdeal(peso, genero, altura) {
         else pesoIdeal = 47.75 + 0.91 * (altura - 152.4)
     return pesoIdeal;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.calculateResults = function() {
+        const peso = parseFloat(document.getElementById('peso').value);
+        const altura = parseFloat(document.getElementById('altura').value) / 100; // convertendo cm para metros
+        const genero = document.getElementById('genero').value;
+        const idade = parseInt(document.getElementById('idade').value);
+
+        const [imc, classificação] = calcularIMC(peso, altura);
+        const tmb = calcularTMB(genero, peso, altura * 100, idade); // altura deve ser em cm para TMB
+        const pesoIdeal = calcularPesoIdeal(peso, genero, altura * 100);
+
+        document.getElementById('resultIMC').innerText = `IMC: ${imc.toFixed(2)}, Classificação: ${classificação}`;
+        document.getElementById('resultTMB').innerText = `TMB: ${tmb.toFixed(2)}`;
+        document.getElementById('resultPesoIdeal').innerText = `Peso Ideal: ${pesoIdeal.toFixed(2)}`;
+    };
+});
