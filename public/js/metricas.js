@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const tmb = calcularTMB(genero, peso, altura * 100, idade); // altura deve ser em cm para TMB
         const pesoIdeal = calcularPesoIdeal(peso, genero, altura * 100);
 
+        document.getElementById('resultsContainer').classList.remove('hidden');
+
         document.getElementById('resultIMC').innerText = `IMC: ${imc.toFixed(2)}, Classificação: ${classificação}`;
         document.getElementById('resultTMB').innerText = `TMB: ${tmb.toFixed(2)}`;
         document.getElementById('resultPesoIdeal').innerText = `Peso Ideal: ${pesoIdeal.toFixed(2)}`;

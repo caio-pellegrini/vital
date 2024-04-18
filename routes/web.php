@@ -10,7 +10,7 @@ Route::match(['get', 'post'], '/test-openai', [ChatGPTController::class, 'chat']
 
 Route::get('calculadoras', function () {
     return view('calculadoras');
-});
+})->name('calculadoras');
 
 Route::get('/dashboard', function () {
     return view('welcome');

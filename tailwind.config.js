@@ -15,7 +15,8 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                'verde-header': '#64a651', // Add your custom color here
+                'verde-header': '#83b874', // Add your custom color here
+                'verde-escuro': '#64a651',
             },
         },
     },
