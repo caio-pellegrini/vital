@@ -1,25 +1,18 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use OpenAI\Laravel\Facades\OpenAI;
-use App\Http\Controllers\ChatGPTController;
 
 Route::get('/', function () {
     return view('welcome');
-});
-
-Route::match(['get', 'post'], '/test-openai', [ChatGPTController::class, 'chat'])->name('send-message');
-
+})->name('/');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('welcome');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+Route::get('/contato', function () {
+    return view('contato');
+})->name('contato');
+
 
 require __DIR__.'/auth.php';
