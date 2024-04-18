@@ -40,7 +40,7 @@
                 <x-nav-link :href="route('/')" :active="request()->routeIs('/')">
                     {{ __('INÍCIO') }}
                 </x-nav-link>
-                <x-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
+                <x-nav-link :href="route('info')" :active="request()->routeIs('info')">
                     {{ __('SUAS INFORMAÇÕES ') }}
                 </x-nav-link>
             </div>

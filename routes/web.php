@@ -21,5 +21,11 @@ Route::get('/contato', function () {
     return view('contato');
 })->name('contato');
 
+Route::get('/info', function () {
+    return view('info');
+})->name('info');
+
+
+
 
 require __DIR__.'/auth.php';
