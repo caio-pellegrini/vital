@@ -8,12 +8,13 @@
         <img class="w-full h-full object-contain" src="{{asset('/images/banner_home.png')}}" type="">
     </div>
 
-
+        @if(!Auth::check())
         <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-gray-800 bg-verde-header text-white border-b-4 mt-4 h-32 flex flex-col justify-center items-center text-center">
             <h2 class="text-black font-bold text-lg">CADASTRA-SE E TENHA ACESSO AO CONTEÚDO PERSONALIZADO!</h2>
             <button class="bg-white text-black bg-opacity-90 rounded px-5 py-2 text-lg m-1"><a href="{{ route('register') }}" >VAMOS LÁ!</a></button>
             <p class="text-black">Ja possui cadastro? <a href="{{ route('login') }}" class="underline">Login</a></p>
         </div>
+        @endif
 
         <div class="flex justify-between space-x-10">
             <h1 class="font-bold">ARTIGOS ÚTEIS</h1>

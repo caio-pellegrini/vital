@@ -62,12 +62,12 @@
             </div>
 
 
-            <div id="resultsContainer" class="bg-white overflow-hidden shadow-sm sm:rounded-lg my-4 hidden">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg my-4">
                 <div class="p-6 text-gray-900">
                     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                         {{ __('Resultados') }}
                     </h2>
-                    <div class="flex flex-wrap -mx-2">
+                    <div id="resultsContainer" class="flex flex-wrap -mx-2 hidden">
                         <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
                             <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
                                 <div class="p-6 text-gray-900 flex flex-col items-center">
@@ -102,20 +102,40 @@
                         </div>
 
 
-                    
 
 
 
+
+                    </div>
                 </div>
+
+
+
+
             </div>
-            
 
 
-
-            <div id="resultIMC"></div>
-            <div id="resultTMB"></div>
-            <div id="resultPesoIdeal"></div>
+            @if (!Auth::check())
+                <div class="bg-verde-header overflow-hidden shadow-sm sm:rounded-lg my-4 p-4">
+                    <div>
+                        Cadastra-se para ter suas informações salvas e acesso ao nosso Plano Nutricional personalizado e
+                        potencializado por IA!
+                    </div>
+                    <x-nav-link :href="route('register')" class="hover:underline">
+                        {{ __('CADASTRE-SE') }}
+                    </x-nav-link>
+                    @if (Route::has('register'))
+                        <x-nav-link :href="route('login')" class="hover:underline">
+                            {{ __('ENTRAR') }}
+                        </x-nav-link>
+                    @endif
+                </div>
+            @endif
         </div>
+
+
+        <div>saiba mais</div>
+
     </div>
 
     <script src="{{ asset('js/metricas.js') }}"></script>
