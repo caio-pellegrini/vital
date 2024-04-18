@@ -24,10 +24,32 @@
             </div>
             <div class="bg-gray-200 p-4 mb-4 flex justify-between items-center">Exercícios para perder barriga: 10 melhores opções <button class="bg-verde-header text-white hover:bg-verde-escuro hover:underline rounded px-3 py-1">Acessar</button></div>
         </div>
-        <div class="border-black border-l-2"></div>
+        <div class="border-black border-l"></div>
         <div class="w-1/2 p-4">
             <h1 class="font-bold justify-center items-center flex mb-4">SUA SAÚDE IMPORTA!</h1>
             <p>Na correria do dia a dia, é fácil deixar a saúde em segundo plano. Mas aqui, nosso compromisso é oferecer informações e recursos essenciais para cuidar do seu bem-estar físico e mental. Desde dicas de alimentação até orientações para lidar com o estresse. Quando se trata da sua saúde, cada cuidado faz toda a diferença. Comece sua jornada conosco e coloque sua saúde em foco hoje mesmo e tenha uma vida saúdavel e equilibrada!</p>
+        </div>
+    </div>
+
+
+    <hr class="mt-24 border-black border-t w-1/2 mx-auto">
+    <div class="m-12">
+        <h2 class="flex items-center justify-center font-bold">ACESSE NOSSA CALCULADORA!</h2>
+        <div class="mx-auto px-2 sm:px-4 lg:px-8 mt-4 flex flex-col justify-center items-center text-center">
+            <p>Saiba como está sua saúde física descobrindo seu Índice de</p>
+            <p>Massa Corporal, sua Taxa Metabólica Basal e seu Peso Ideal.</p>
+            <button class="bg-verde-header text-black bg-opacity-90 rounded px-5 py-2 text-lg m-2">Acessar</button>
+        </div>
+    </div>
+    <hr class="mb-24 border-black border-t w-1/2 mx-auto">
+    <div>
+        <h1 class="font-bold flex items-center justify-center">VÍDEOS DO DIA</h1>
+    </div>
+    <div class="m-16">
+        <div class="flex justify-between">
+            <iframe width="366" height="231" src="https://www.youtube.com/embed/CrwRwgNJIMU?si=CpY3q2LaYCs0f4nH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="366" height="231" src="https://www.youtube.com/embed/QK4qBiBj-QI?si=ntQ26ivvZinl4zlb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="366" height="231" src="https://www.youtube.com/embed/wSpnNf70Y1Q?si=g9hlgVGfjHp4NUMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 
