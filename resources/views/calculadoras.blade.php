@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div class="py-12">
+    <div class="py-5">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
@@ -98,14 +98,15 @@
             </div>
             @if (!Auth::check())
             <div class="bg-verde-header overflow-hidden shadow-sm sm:rounded-lg my-4 p-4">
-                <div>
-                    Cadastra-se para ter suas informações salvas e acesso ao nosso Plano Nutricional personalizado e
-                    potencializado por IA!
+                <div class="text-lg text-white flex justify-center">
+                    Cadastra-se para ter suas informações salvas e acesso ao nosso Plano Nutricional personalizado e potencializado por IA!
                 </div>
+                <div class="flex justify-center mt-3">
                 <button class="bg-white text-black bg-opacity-90 rounded px-5 py-1 text-lg mt-1 mr-2"><a href="{{ route('register') }}">CADASTRE-SE</a></button>
                 @if (Route::has('register'))
                 <button class="bg-white text-black bg-opacity-90 rounded px-5 py-1 text-lg mt-1"><a href="{{ route('login') }}">LOGIN</a></button>
                 @endif
+                </div>
             </div>
             @endif
         </div>
@@ -170,13 +171,11 @@
                     
                     <div class="my-10">
                         <div class="px-4">
-                            <p class="text-xl mt-10 leading-loose">
+                            <p class="text-xl mt-10 leading-loose italic font-bold">
                                 <span class="text-red-500 font-bold">Atenção:</span> Estes cálculos não substituem uma consulta, procure um nutricionista para fazer a avaliação detalhada.
                             </p>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
