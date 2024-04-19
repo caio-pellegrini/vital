@@ -29,7 +29,7 @@
             <p>Na correria do dia a dia, é fácil deixar a saúde em segundo plano. Mas aqui, nosso compromisso é oferecer informações e recursos essenciais para cuidar do seu bem-estar físico e mental. Desde dicas de alimentação até orientações para lidar com o estresse. Quando se trata da sua saúde, cada cuidado faz toda a diferença. Comece sua jornada conosco e coloque sua saúde em foco hoje mesmo e tenha uma vida saúdavel e equilibrada!</p>
         </div>
     </div>
-    
+
     <hr class="mt-24 border-black border-t w-1/2 mx-auto">
     <div class="m-12">
         <h2 class="flex items-center justify-center font-bold">ACESSE NOSSA CALCULADORA!</h2>
