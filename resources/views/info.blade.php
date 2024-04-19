@@ -145,7 +145,7 @@
                 <div>
                     <div class="px-4">
                         <p class="text-xl mt-10 leading-loose">
-                            <span class="text-red-500 font-bold">Atenção:</span> Estes cálculos não substituem uma consulta, procure um nutricionista para fazer a avaliação detalhada.
+                            <span class="text-red-500 font-bold">Atenção:</span> Procure um nutricionista para fazer a avaliação detalhada.
                         </p>
                     </div>
                 </div>
