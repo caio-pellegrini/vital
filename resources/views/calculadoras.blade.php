@@ -1,9 +1,4 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Descubra suas medidas') }}
-        </h2>
-    </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -12,14 +7,11 @@
 
                     <form id="imcForm">
                         <div class="flex flex-wrap -mx-2">
-                            <!-- Adicionei flex-wrap e um negativo margin para lidar com espaçamento -->
                             <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-4">
-                                <!-- ajuste para responsividade e espaçamento -->
                                 <label for="genero" class="block text-sm font-medium text-gray-700">Gênero:</label>
                                 <select id="genero" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                                     <option value="masculino">Masculino</option>
                                     <option value="feminino">Feminino</option>
-                                    <option value="outro">Prefiro não informar</option>
                                 </select>
                             </div>
 
