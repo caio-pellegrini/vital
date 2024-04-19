@@ -47,7 +47,7 @@
             </div>
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg my-4">
                 <div class="p-6 text-gray-900">
-                    <h2 class="font-semibold text-xl text-gray-800 leading-tight flex items-center justify-center mb-2">
+                    <h2 class="font-semibold text-xl text-gray-800 leading-tight flex  justify-center mb-2">
                         {{ __('Resultados') }}
                     </h2>
                     <div id="resultsContainer" class="flex flex-wrap -mx-2 hidden">
