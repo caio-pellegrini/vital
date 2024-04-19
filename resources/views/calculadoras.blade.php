@@ -67,46 +67,58 @@
                     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                         {{ __('Resultados') }}
                     </h2>
+                    
                     <div id="resultsContainer" class="flex flex-wrap -mx-2 hidden">
                         <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-                            <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
-                                <div class="p-6 text-gray-900 flex flex-col items-center">
-                                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                            <div class="bg-white overflow-hidden shadow rounded-lg">
+                                <div class="px-4 py-5 sm:p-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900 flex justify-center">
                                         {{ __('IMC') }}
-                                    </h2>
-                                    <p id="resultIMC"></p>
+                                    </h3>
+                                    <div class="mt-2 text-3xl leading-8 font-semibold text-green-600 flex justify-center">
+                                        <span id="resultIMC"></span>
+                                    </div>
+                                    <div class="mt-1 text-sm text-gray-500 flex justify-center">
+                                        <span id="classificationIMC"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
+                    
                         <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-                            <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
-                                <div class="p-6 text-gray-900 flex flex-col items-center">
-                                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                                        {{ __('TMB') }}
-                                    </h2>
-                                    <p id="resultTMB"></p>
+                            <div class="bg-white overflow-hidden shadow rounded-lg">
+                                <div class="px-4 py-5 sm:p-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900 flex justify-center">
+                                        {{ __('TMB - Taxa Metabólica Basal') }}
+                                    </h3>
+                                    <div class="mt-2 text-3xl leading-8 font-semibold text-blue-600 flex justify-center">
+                                        <span id="resultTMB"></span> kcal/dia
+                                    </div>
+                                    <div class="mt-1 text-sm text-gray-500 flex justify-center">
+                                        <span>&nbsp;</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
+                    
                         <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-                            <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
-                                <div class="p-6 text-gray-900 flex flex-col items-center">
-                                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                            <div class="bg-white overflow-hidden shadow rounded-lg">
+                                <div class="px-4 py-5 sm:p-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900 flex justify-center">
                                         {{ __('Peso Ideal') }}
-                                    </h2>
-                                    <p id="resultPesoIdeal"></p>
+                                    </h3>
+                                    <div class="mt-2 text-3xl leading-8 font-semibold text-pink-600 flex justify-center">
+                                        <span id="resultPesoIdeal"></span> kg
+                                    </div>
+                                    <div class="mt-1 text-sm text-gray-500 flex justify-center">
+                                        <span>&nbsp;</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
+                    
+
                 </div>
 
 
@@ -159,6 +171,8 @@
                         </div>
                     </div>
 
+                    <hr class=" border-black border-t w-full mx-auto">
+
                     <div class="my-20 grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div class="md:col-span-1 px-4">
                             <h2 class="font-semibold text-lg text-gray-800 leading-tight">
@@ -175,6 +189,8 @@
                         </div>
                     </div>
 
+                    <hr class="border-black border-t w-full mx-auto">
+
                     <div class="my-20">
                         <div class="px-4">
                             <h2 class="font-semibold text-lg text-gray-800 leading-tight">
@@ -185,7 +201,9 @@
                         </div>
                     </div>
 
-                    <div class="my-20">
+                    <hr class="border-black border-t w-full mx-auto">
+                    
+                    <div class="my-10">
                         <div class="px-4">
                             <p class="text-xl mt-10 leading-loose">
                                 <span class="text-red-500 font-bold">Atenção:</span> Estes cálculos não substituem uma consulta, procure um nutricionista para fazer a avaliação detalhada.
