@@ -36,7 +36,7 @@
         <div class="mx-auto px-2 sm:px-4 lg:px-8 mt-4 flex flex-col justify-center items-center text-center">
             <p>Saiba como está sua saúde física descobrindo seu Índice de</p>
             <p>Massa Corporal, sua Taxa Metabólica Basal e seu Peso Ideal.</p>
-            <button class="bg-verde-header text-black bg-opacity-90 rounded px-5 py-2 text-lg m-2">Acessar</button>
+            <button class="bg-verde-header text-black bg-opacity-90 rounded px-5 py-2 text-lg m-2"><a href="{{ route('calculadoras') }}">Acessar</a></button>
         </div>
     </div>
     <hr class="mb-24 border-black border-t w-1/2 mx-auto">
