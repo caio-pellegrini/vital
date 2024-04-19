@@ -50,7 +50,7 @@
                     <h2 class="font-semibold text-xl text-gray-800 leading-tight flex  justify-center mb-2">
                         {{ __('Resultados') }}
                     </h2>
-                    <div id="resultsContainer" class="flex flex-wrap -mx-2 hidden">
+                    <div id="resultsContainer" class="flex flex-wrap -mx-2">
                         <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
                             <div class="bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
                                 <div class="p-6 text-gray-900 flex flex-col items-center">
