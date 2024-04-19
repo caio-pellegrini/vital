@@ -178,11 +178,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
     <x-slot name="footer"></x-slot>
     <script src="{{ asset('js/metricas.js') }}"></script>
 </x-app-layout>

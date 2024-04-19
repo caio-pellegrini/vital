@@ -3,9 +3,27 @@
         Vital - Nutrição e Saúde
     </x-slot>
 
-    <div class="flex relative w-full overflow-hidden sm:h-[60vh] -mt-px px-8">
-        <img class="w-full h-full object-contain" src="{{asset('/images/banner_home.png')}}" type="">
+    <div x-data="{ slide: 0, slides: ['{{@asset('/images/banner_home.png')}}', '{{@asset('/images/banner_home2.png')}}', '{{@asset('/images/banner_home3.png')}}'] }" class="w-full">
+        <div class="relative">
+            <div class="w-full">
+                <template x-for="(src, index) in slides" :key="index">
+                    <div x-show="slide === index" class="w-full">
+                        <img :src="src" class="w-full">
+                    </div>
+                </template>
+                <button @click="slide = slide === 0 ? slides.length - 1 : slide - 1" class="absolute top-1/2 left-0 ml-3 bg-transparent p-2 rounded-full text-black text-4xl transform -translate-y-1/2">‹</button>
+                <button @click="slide = slide === slides.length - 1 ? 0 : slide + 1" class="absolute top-1/2 right-0 mr-3 bg-transparent p-2 rounded-full text-black text-4xl transform -translate-y-1/2">›</button>
+
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-4">
+                    <template x-for="(src, index) in slides" :key="index">
+                        <button @click="slide = index" x-bind:class="{ 'text-verde-escuro': slide === index }" class=" mx-1 rounded-full text-4xl">•</button>
+                    </template>
+                </div>
+            </div>
+        </div>
     </div>
+
+
     @if(!Auth::check())
     <div class="mx-auto px-2 sm:px-4 lg:px-8 bg-verde-header text-white border-b-4 mt-4 h-32 flex flex-col justify-center items-center text-center">
         <h2 class="text-black font-bold text-lg">CADASTRA-SE E TENHA ACESSO AO CONTEÚDO PERSONALIZADO!</h2>

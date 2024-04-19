@@ -58,13 +58,11 @@
                     </div>
 
                     <div class="flex justify-center">
-
-                        <button class="bg-gray-400 text-black bg-opacity-90  px-5 py-2 text-lg mt-1 mr-2">CONFITMAR</button>
-
+                        <button class="bg-gray-400 text-black bg-opacity-90  px-5 py-2 text-lg mt-1 mr-2" onclick="showDiet()" onsubmit="return false;">CONFIRMAR</button>
                     </div>
                 </form>
             </div>
-            <div class="mt-12">
+            <div class="mt-12" id="dietPlan" style="display: none;">
                 <div class="mb-6">
                     <button class="bg-verde-header text-black bg-opacity-90 rounded px-4 py-1 text-lg mt-1 mr-2">SUA DIETA</button>
                 </div>
@@ -115,7 +113,14 @@
                     </div>
                 </div>
             </div>
-            <div class="py-12">
+
+            <script>
+                function showDiet() {
+                    event.preventDefault(); // Prevent the default form submission behavior
+                    document.getElementById('dietPlan').style.display = 'block';
+                }
+            </script>
+            <div class="py-12 -ml-8">
                 <div>
                     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                         <div class="bg-gray-300 overflow-hidden shadow-sm sm:rounded-lg">
@@ -124,6 +129,7 @@
                                     {{ __('Inteligência Artificial de Nutrição') }}
                                 </h2>
                                 <form action="{{ route('send-message') }}" method="POST">
+
                                     @csrf
                                     <div class="mb-4">
                                         <label for="message" class="block text-lg text-gray-700">Aqui você pode personalizar sua dieta e tirar suas dúvidas sobre nutrição e saúde</label>
@@ -144,7 +150,7 @@
                 </div>
                 <div>
                     <div class="px-4">
-                        <p class="text-xl mt-10 leading-loose">
+                        <p class="text-xl mt-10 leading-loose italic">
                             <span class="text-red-500 font-bold">Atenção:</span> Procure um nutricionista para fazer a avaliação detalhada.
                         </p>
                     </div>
