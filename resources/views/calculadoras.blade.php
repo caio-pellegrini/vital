@@ -112,8 +112,8 @@
                 </div>
                 <button class="bg-white text-black bg-opacity-90 rounded px-5 py-1 text-lg mt-1 mr-2"><a href="{{ route('register') }}">CADASTRE-SE</a></button>
                 @if (Route::has('register'))
-
                 <button class="bg-white text-black bg-opacity-90 rounded px-5 py-1 text-lg mt-1"><a href="{{ route('login') }}">LOGIN</a></button>
+                @endif
             </div>
             @endif
 
