@@ -22,6 +22,13 @@ git clone https://github.com/caio-pellegrini/vital.git
 ```
 Siga as instruções de instalação especificadas na documentação do projeto para configurar o ambiente.
 
+1. Cole ou crie o arquivo .env na raiz do projeto. Rode os comandos abaixo em sequência:
+2. ```composer install```
+3. ```npm install```
+4. ```php artisan migrate```
+5. ```php artisan serve```
+6. ```npm run dev```
+
 ## Uso
 Detalhes sobre como usar o aplicativo Vital devem ser especificados aqui, incluindo quaisquer comandos ou scripts necessários.
 
